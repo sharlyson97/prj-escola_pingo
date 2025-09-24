@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escola Pingo</title>
+
+    <!-- jQuery Mobile -->
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+    <style>
+
+        .logo-escola {
+            height: 50px;
+            vertical-align: middle;
+            margin-right: 8px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Página Principal -->
+<div data-role="page" id="home">
+
+    <!-- Cabeçalho -->
+    <header data-role="header" data-position="fixed">
+        <h1>
+            <img src="imagem/escola pingo imagem.jpg" alt="Logo da Escola" class="logo-escola" style="width: 10%;">
+            Escola Pingo
+        </h1>
+        <nav data-role="navbar">
+            <ul>
+                <li><a href="index.html" data-icon="home" class="ui-btn-active">Home</a></li>
+                <li><a href="educacao.html" data-icon="tag">Educação Infantil</a></li>
+                <li><a href="galeria.html" data-icon="grid">Galeria</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Conteúdo -->
+    <section data-role="content">
+
+        <a href="pagina.html" data-role="button" data-theme="a" data-transition="slide">Ir para próxima página</a>
+
+        <!-- Botões de Diálogo -->
+        <a href="dialogo.html" data-role="button" data-rel="dialog" data-transition="slideup">Diálogo SlideUp</a>
+        <a href="dialogo.html" data-role="button" data-rel="dialog" data-transition="slidedown">Diálogo SlideDown</a>
+        <a href="dialogo.html" data-role="button" data-rel="dialog" data-transition="pop">Diálogo Pop</a>
+
+        <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et optio explicabo...</h4>
+        <h4>Outro parágrafo com mais texto sobre a escola ou conteúdo da página...</h4>
+
+    </section>
+
+    <!-- Rodapé -->
+    <footer data-role="footer" data-position="fixed">
+        <nav data-role="navbar">
+            <ul>
+                <li><a href="https://www.facebook.com/?locale=pt_BR" data-icon="navigation">Facebook</a></li>
+                <li><a href="https://www.instagram.com/" data-icon="heart">Instagram</a></li>
+                <li><a href="https://x.com/" data-icon="plus">Twitter</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+</div>
+
+</body>
+</html>

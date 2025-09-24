@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria - Escola Pingo</title>
+
+    <!-- jQuery Mobile -->
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+
+</head>
+<body>
+    <style>
+
+        .galeria img {
+            width: 100px;
+            margin: 5px;
+            border-radius: 5px;
+        }
+
+        .popup-img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+<!-- Página Galeria -->
+<div data-role="page" id="galeria">
+
+    <!-- Cabeçalho -->
+    <header data-role="header" data-position="fixed">
+        <h1>
+            <img src="imagem/escola pingo imagem.jpg" alt="Logo da Escola" style="height: 50px; vertical-align: middle; margin-right: 8px;">
+            Escola Pingo
+        </h1>
+        <nav data-role="navbar">
+            <ul>
+                <li><a href="index.html" data-icon="home">Home</a></li>
+                <li><a href="educacao.html" data-icon="tag">Educação Infantil</a></li>
+                <li><a href="galeria.html" data-icon="grid" class="ui-btn-active">Galeria</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Conteúdo da Galeria -->
+    <section data-role="content">
+        <h3>Galeria de Fotos</h3>
+        <div class="galeria">
+
+            <!-- Biblioteca -->
+            <a href="#popup1" data-rel="popup" data-position-to="window" data-transition="pop">
+                <img src="imagem/BIBLIOTECA.jpg" alt="Biblioteca">
+            </a>
+            <div data-role="popup" id="popup1" data-theme="a" data-overlay-theme="b">
+                <img src="imagem/BIBLIOTECA.jpg" alt="Biblioteca Ampliada" class="popup-img">
+            </div>
+
+            <!-- Parquinho -->
+            <a href="#popup2" data-rel="popup" data-position-to="window" data-transition="pop">
+                <img src="imagem/PARQUINHO.jpg" alt="Parquinho">
+            </a>
+            <div data-role="popup" id="popup2" data-theme="a" data-overlay-theme="b">
+                <img src="imagem/PARQUINHO.jpg" alt="Parquinho Ampliado" class="popup-img">
+            </div>
+
+            <!-- Refeitório -->
+            <a href="#popup3" data-rel="popup" data-position-to="window" data-transition="pop">
+                <img src="imagem/REFEITORIO.jpg" alt="Refeitório">
+            </a>
+            <div data-role="popup" id="popup3" data-theme="a" data-overlay-theme="b">
+                <img src="imagem/REFEITORIO.jpg" alt="Refeitório Ampliado" class="popup-img">
+            </div>
+
+            <!-- Sala de Aula -->
+            <a href="#popup4" data-rel="popup" data-position-to="window" data-transition="pop">
+                <img src="imagem/SALA DE AULA.jpg" alt="Sala de Aula">
+            </a>
+            <div data-role="popup" id="popup4" data-theme="a" data-overlay-theme="b">
+                <img src="imagem/SALA DE AULA.jpg" alt="Sala de Aula Ampliada" class="popup-img">
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer data-role="footer" data-position="fixed">
+        <nav data-role="navbar">
+            <ul>
+                <li><a href="https://www.facebook.com/" data-icon="navigation">Facebook</a></li>
+                <li><a href="https://www.instagram.com/" data-icon="heart">Instagram</a></li>
+                <li><a href="https://x.com/" data-icon="plus">Twitter</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+</div>
+</body>
+</html>
